@@ -1,10 +1,33 @@
+html {
+  scroll-snap-type: y mandatory;
+}
 .App {
   text-align: center;
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  place-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__videos {
+  position: relative;
+  height: 800px;
+  width: 90%;
+  border-radius: 20px;
+  max-width: 1000px;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+/* Hide scrollbar for chrome, safari and opera */
+.app__videos::-webkit-scrollbar {
+  display: none;
+}
+
+/* HIde scrollbar for IE, edge and firebox */
+.app__videos {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,25 +37,25 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: white;
+  width: 100%;
+  /* width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+  font-size: calc(3px + 2vmin);
+  color: white; */
+}
+
+.header__logo {
+  width:100px;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.video {
+  height: 100vh;
 }
