@@ -19,6 +19,16 @@ html {
   scroll-snap-type: y mandatory;
 }
 
+.app__videos__mobile {
+  position: relative;
+  height: 500px;
+  width: 90%;
+  border-radius: 20px;
+  max-width: 1000px;
+  overflow: scroll;
+  scroll-snap-type: y mandatory; 
+}
+
 /* Hide scrollbar for chrome, safari and opera */
 .app__videos::-webkit-scrollbar {
   display: none;

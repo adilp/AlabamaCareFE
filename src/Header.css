@@ -5,3 +5,11 @@
     position: absolute;
     color: white
 }
+
+.header_mobile {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    color: white 
+}

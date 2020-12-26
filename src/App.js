@@ -3,6 +3,10 @@ import "./App.css";
 import Video from "./Video";
 
 function App() {
+  let videoClass = "app__videos";
+  if (window.screen.width <= 1280) {
+    videoClass = "app__videos__mobile";
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -13,7 +17,7 @@ function App() {
         ></img>
       </header>
 
-      <div className="app__videos">
+      <div className={videoClass}>
         <Video
           url="https://www.youtube.com/watch?v=jVlgyDY5Lvs"
           votes={100}
