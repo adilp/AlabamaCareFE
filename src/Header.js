@@ -5,13 +5,17 @@ function Header({ title }) {
   if (window.screen.width >= 1280) {
     return (
       <div className="header">
-        <h4>{title}</h4>
+        <div className="text">
+          <h4>{title}</h4>
+        </div>
       </div>
     );
   } else {
     return (
       <div className="header_mobile">
-        <h4>{title}</h4>
+        <div className="text">
+          <h4>{title}</h4>
+        </div>
       </div>
     );
   }

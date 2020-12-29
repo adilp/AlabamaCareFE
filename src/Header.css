@@ -3,13 +3,18 @@
     height: 100px;
     width: 100%;
     position: absolute;
-    color: white
+    color: white;
 }
 
 .header_mobile {
     background-color: black;
-    height: 100px;
+    height: 50px;
     width: 100%;
     position: absolute;
     color: white 
+}
+
+
+.text {
+    text-align: center;
 }
